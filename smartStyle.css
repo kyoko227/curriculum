@@ -65,6 +65,7 @@
     .item3 {
         max-width: 150px;
         height: 100px;
+        clear: both;
     }
     
     .item4 {
