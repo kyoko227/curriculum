@@ -121,9 +121,15 @@
     .left {
         max-width: 150px;
         height: 100px;
+        float: none;
+    }
+
+    .right {
+        float: none;
     }
 
     .item3 {
+        max-width: none;
         width: 150px;
         height: 100px;
         clear: both;
