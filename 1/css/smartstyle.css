@@ -15,7 +15,7 @@
 .container {
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .item1 {
@@ -61,26 +61,32 @@
     float: left;
 }
 
+.clearfix{
+    display: block;
+}
+
 .item4 {
     width: 140px;
-    height: 50px;
+    height: 40px;
     background-color: #ff863f;
     border:5px solid white;
-    padding: 40px 60px 40px 40px;
+    position: 40px 60px 40px 40px;
 }
 
 .item5 {
     width: 140px;
-    height: 50px;
+    height: 40px;
     background-color: #ff863f;
     border:5px solid white;
+    margin-top: 10px;
 }
 
 .item6 {
     width: 140px;
-    height: 50px;
+    height: 40px;
     background-color: #ff863f;
     border:5px solid white;
+    margin-top: 10px;
 }
 
 .footer {
@@ -90,87 +96,82 @@
     margin: 0;
 }
 
-@media screen and (min-width: 767px) {
-    .contents {
-        max-width: 1000px; 
-        width: 100%; 
-        margin-left: auto; 
-        margin-right: auto; 
-        }
-}
-
-@media screen and (max-width: 767px) {
-    .contents {
-        max-width: 300px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .header {
-        max-width: 300px;
-    }
-
-    .item1 {
-
-    }
-
-    .left {
-        max-width: 100px;
-    }
-
-    .item2 {
-        max-width: 125px;
-    }
-
-    .item3 {
-        max-width: 75px;
-    }
-
-    .item4 {
-        max-width: 200px;
-    }
-
-    .footer {
-        max-width: 300px;
-    }
-}
 
 @media screen and (max-width: 479px) {
     .contents {
-        max-width: 150px;
+        max-width: 200px;
         width: 100%;
-        margin-left: auto;
         margin-right: auto;
+        display: none;
         float: none;
     }
- 
+    
+    .container {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-flow: column;
+        position: 20px 70px 20px 70px;
+    }
+
     .header {
-        max-width: 150px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .item1 {
+        width: 40px;
+        height: 40px;
+        background-color: #a9004b;
+        border: 10px solid white;
+        border-bottom: transparent;
+        position: relative;
+        float: right;
+    }
+
+    .item2 {
+        width: 40px;
+        height: 40px;
+        background-color: #a9004b;
+        border: 10px solid white;
+        border-bottom: transparent;
+        position: relative;
+        float: right;
+    }
+
+    .clearfix {
+        display: block;
     }
 
     .left {
-        max-width: 150px;
+        width: 200px;
         height: 100px;
         float: none;
     }
 
     .right {
+        width: 200px;
+        height: 200px;
         float: none;
     }
 
-    .item3 {
-        max-width: none;
-        width: 150px;
-        height: 100px;
+    .item4 {
+        max-width: 140px;
+        width: 140px;
         clear: both;
+        position: 20px 30px;
     }
     
-    .item4 {
-        width: 150px;
+    .item5 {
+        width: 140px;
+    } 
+
+    .item6 {
+        width: 140px;
     } 
 
     .footer {
-        max-width: 150px;
+        width: 200px;
     }
 }
 
